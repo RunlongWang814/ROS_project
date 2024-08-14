@@ -4,16 +4,15 @@ Welcome to the **Blueberry Picking Robot** project! The goal of this project is 
 
 ## Abstract 📄
 
-In this project, we designed and implemented a robotic system that combines ROS-based navigation, visual recognition, and robotic arm control to automate the task of picking blueberries. The system uses SLAM for mapping, OpenCV for visual recognition, and a manipulator to grasp and pick the detected blueberries. The entire process is orchestrated using ROS, ensuring modularity, reusability, and easy integration of different functionalities.
+In this project, we designed and implemented a robotic system that combines ROS-based navigation, visual recognition, and robotic arm control to automate the task of picking blueberries. The system uses SLAM for mapping, OpenCV for visual recognition, and a manipulator to grasp and pick(not achieved "approach") the detected blueberries. The entire process is using ROS, ensuring modularity, reusability, and easy integration of different functionalities.
 
 ## Software and Hardware Platforms 🛠️
 
 ### Software
 - **Operating System:** Ubuntu 16.04
 - **Robot Operating System (ROS):** Kinetic
-- **SLAM Algorithms:** Gmapping, Hector Mapping
 - **Vision Processing:** OpenCV
-- **Robot Control:** MoveIt!, Teleop
+- **Robot Control:** MoveIt!
 
 ### Hardware
 - **Robot Base:** TurtleBot3
@@ -92,8 +91,3 @@ The overall architecture of the project integrates multiple ROS nodes that handl
   - Developed a C++ client to execute arm movements based on detected blueberries.
   - Implemented error handling and retry mechanisms.
   - Created launch files for streamlined node initialization.
-
-## Let's Get Picking! 🌟
-
-Thank you for exploring the Blueberry Picking Robot project! Whether you're here for inspiration or technical guidance, I hope you find this project as exciting as I do. Contributions and suggestions are always welcome. Happy coding! 🫐🤖
-
