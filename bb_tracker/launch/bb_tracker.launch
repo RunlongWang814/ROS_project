@@ -1,0 +1,3 @@
+<launch>
+    <node name="bb_tracker" pkg="bb_tracker" type="bb_tracker" output="screen"/>
+</launch>
