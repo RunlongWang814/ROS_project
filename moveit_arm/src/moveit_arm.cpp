@@ -11,7 +11,7 @@ bool detectingPosition(moveit::planning_interface::MoveGroupInterface& move_grou
   const robot_state::JointModelGroup* joint_model_group = 
       current_state->getJointModelGroup("arm");
 
-  // 设置目标关节角度
+  // set traget radius of the joint
   std::vector<double> joint_group_positions;
   current_state->copyJointGroupPositions(joint_model_group, joint_group_positions);
 
@@ -48,13 +48,13 @@ int main(int argc, char** argv)
   ros::AsyncSpinner spinner(1);
   spinner.start();
 
-  // MoveIt! MoveGroup接口初始化
+  // init moveit move group
   moveit::planning_interface::MoveGroupInterface move_group("arm");
 
-  // 设置规划时间为10秒
+  // planning time 10s
   move_group.setPlanningTime(10.0);
 
-  // 调用函数移动到检测位置
+  // call function to move to detectiong positions
   bool success = detectingPosition(move_group);
 
   if(success)

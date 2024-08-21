@@ -1,6 +1,6 @@
 #include <ros/ros.h>
 #include <std_msgs/String.h>
-#include <link_service/BluePoint.h>  // Replace 'link_service' with your package name
+#include <link_service/BluePoint.h> // include .srv flie
 #include <sstream>
 #include <string>
 
