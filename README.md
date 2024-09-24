@@ -90,4 +90,4 @@ The overall architecture of the project integrates multiple ROS nodes that handl
 - **Key Activities:**
   - Developed a C++ client to execute arm movements based on detected blueberries.
   - Implemented error handling and retry mechanisms.
-  - Created launch files for streamlined node initialization.
+  - Created launch files for streamlined node initialization(not yet finnished).
